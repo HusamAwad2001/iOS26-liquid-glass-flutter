@@ -1,7 +1,17 @@
 import 'package:flutter/cupertino.dart';
 
-import 'bottom_navigation_bar.dart';
+import 'popup_menu_button.dart';
 
-void main() => runApp(
-  CupertinoApp(debugShowCheckedModeBanner: false, home: TabBarScreen()),
-);
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoApp(
+      debugShowCheckedModeBanner: false,
+      home: PopupMenuButton(),
+    );
+  }
+}
