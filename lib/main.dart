@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import 'popup_menu_button.dart';
+import 'slider.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,9 +9,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
-      debugShowCheckedModeBanner: false,
-      home: PopupMenuButton(),
-    );
+    return CupertinoApp(debugShowCheckedModeBanner: false, home: Slider());
   }
 }
